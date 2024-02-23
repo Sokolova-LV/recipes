@@ -24,8 +24,7 @@ body {
    width: 100%;
 }
 
-ul,
-li {
+ul, li {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -35,13 +34,7 @@ a {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -58,8 +51,7 @@ img {
 }
 
 .header {
-    width: 100%;
-    background-color: var(--main-background-color);
+    margin: 0;
 }
 
 .header__title {
@@ -73,7 +65,7 @@ img {
 
 .header__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px 0;
     font-family: var(--main-font-family);
     font-weight: bold;
@@ -91,29 +83,26 @@ img {
 }
 
 .hero {
-    width: 100%;
-    background-color: var(--main-background-color);
-    margin: auto;
+    margin: 0;
 }
 
 .hero__img {
     width: 400px;
     height: 500px;
-    margin: auto;
+    margin: 0 auto;
     padding: 16px 0 32px;
     border-radius: 5%;
 }
 
 .dessert {
-    width: 100%;
-    background-color: var(--main-background-color);
+    margin: 0;
 }
 
 .dessert__label {
     display: block;
     text-align: center;
     margin: auto;
-    width: 120px;
+    width: 100px;
     font-family: var(--accent-font-family);
     font-weight: normal;
     font-size: 20px;
@@ -136,11 +125,11 @@ img {
 }
 
 .dessert__product {
-    width: 420px;
     display: block;
     margin: auto;
-    border: 1px solid var(--text-color);
-    border-radius: 10px;
+    width: 400px;
+    border: 1px dashed var(--text-color);
+    border-radius: 6px;
 }
 
 .dessert__title {
@@ -197,10 +186,9 @@ img {
     line-height: 1.5;
 }
 
-.footer {
-    width: 100%;
+.footer__section {
     padding: 40px 0 40px;
-    background-color: var(--main-background-color);
+    margin: 0;
 }
 
 .footer__label {
