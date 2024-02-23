@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    --main-background-color: #F5E9DB;
+    --accent-background-color: #FF7F50;
+
+    --text-color: #392E28;
+    --white-text-color: #F5E9DB;
+    --accent-color: #FF7F50;
+
+    --main-font-family: "Open Sans", sans-serif;;
+    --accent-font-family: "Playfair Display SC", serif;;
+
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   background-color: var(--main-background-color);
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background-color: var(--main-background-color);
+}
+
+.header__title {
+    text-align: center;
+    padding: 32px 0;
+    font-family: var(--accent-font-family);
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--text-color);
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header__link {
+    color: var(--text-color);
+}
+
+.header__link:hover,
+.header__link:focus {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.hero {
+    width: 100%;
+    background-color: var(--main-background-color);
+    margin: auto;
+}
+
+.hero__img {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    padding: 16px 0 32px;
+    border-radius: 5%;
+}
+
+.dessert {
+    width: 100%;
+    background-color: var(--main-background-color);
+}
+
+.dessert__label {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 120px;
+    font-family: var(--accent-font-family);
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--text-color);
+    border-radius: 6px;
+    border: 1px solid var(--text-color);  
+}
+
+.dessert__label:hover,
+.dessert__label:focus {
+    font-weight: bold;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.dessert__wrap {
+    padding: 32px 0;
+}
+
+.dessert__product {
+    width: 420px;
+    display: block;
+    margin: auto;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+}
+
+.dessert__title {
+    text-align: center;
+    padding: 16px 0;
+    font-family: var(--accent-font-family);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.dessert__img {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    padding-bottom: 16px;
+    border-radius: 5%;
+}
+
+.dessert__ingredients {
+    text-align: center;
+    padding-bottom: 16px;
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.dessert__list {
+    padding: 0 16px;
+}
+
+.dessert__item {
+    padding-bottom: 8px;
+    font-family: var(--main-font-family);
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.dessert__cook {
+    text-align: center;
+    padding: 8px 0 16px;
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.dessert__text {
+    padding: 0 16px 16px;
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--main-background-color);
+}
+
+.footer__wrap {
+    padding: 40px 0 40px;
+}
+
+.footer__title {
+    text-align: center;
+    padding: 0 0 16px;
+    font-family: var(--accent-font-family);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0 0;
+}
+
+.footer__item {
+
+}
+
+.footer__link {
+    text-align: center;
+    padding: 8px 16px;
+    font-family: var(--main-font-family);
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--main-background-color);
+    background: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+    color: var(--accent-color);
+    background: var(--main-background-color);
+    border: 2px solid var(--accent-color);
+    transition: var(--transition);
+}
