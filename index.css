@@ -127,7 +127,7 @@ img {
 .dessert__product {
     display: block;
     margin: auto;
-    width: 400px;
+    width: 350px;
     border: 1px dashed var(--text-color);
     border-radius: 6px;
 }
